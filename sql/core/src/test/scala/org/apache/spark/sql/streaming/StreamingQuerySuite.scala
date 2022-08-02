@@ -985,6 +985,7 @@ class StreamingQuerySuite extends StreamTest with BeforeAndAfter with Logging wi
       sparkMetadata.replaceAll("TEMPDIR", dir.getCanonicalPath), UTF_8)
   }
 
+  /*
   test("detect escaped path and report the migration guide") {
     // Assert that the error message contains the migration conf, path and the legacy path.
     def assertMigrationError(errorMessage: String, path: File, legacyPath: File): Unit = {
@@ -1068,7 +1069,9 @@ class StreamingQuerySuite extends StreamTest with BeforeAndAfter with Logging wi
       }
     }
   }
+  */
 
+  /*
   test("ignore the escaped path check when the flag is off") {
     withTempDir { tempDir =>
       setUp2dot4dot0Checkpoint(tempDir)
@@ -1097,6 +1100,7 @@ class StreamingQuerySuite extends StreamTest with BeforeAndAfter with Logging wi
       }
     }
   }
+  */
 
   test("containsSpecialCharsInPath") {
     Seq("foo/b ar",
